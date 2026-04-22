@@ -1,12 +1,15 @@
 ---
 import Section from './Section.astro';
+
+// To use a real photo: drop a file at /public/california.jpg and change this path.
+const californiaSrc = '/california-placeholder.svg';
 ---
 
 <Section id="personal" title="Outside work">
   <div class="space-y-4 text-base leading-relaxed text-slate-700 dark:text-stone-300">
     <p>
-      I'm reading my way through <em>The Two Towers</em> — I grew up on the films and
-      decided it was time for the books.
+      I'm reading through <em>The Lord of the Rings</em> — currently on
+      <em>The Two Towers</em>. I grew up on the films and decided it was time for the books.
     </p>
     <p>
       Last summer I traveled through Japan and South Korea with friends, then hosted one
@@ -14,4 +17,15 @@ import Section from './Section.astro';
       community.
     </p>
   </div>
+  <figure class="mt-8 flex flex-col items-center">
+    <img
+      src={californiaSrc}
+      alt="California travels"
+      class="w-full max-w-md rounded-lg border border-slate-200 dark:border-stone-800"
+      loading="lazy"
+    />
+    <figcaption class="mt-3 text-sm text-slate-500 dark:text-stone-400">
+      California, summer 2025
+    </figcaption>
+  </figure>
 </Section>
