@@ -39,17 +39,17 @@ const roles = [
   <ol class="space-y-6">
     {roles.map((role) => (
       <li class="grid gap-1 sm:grid-cols-[10rem_1fr] sm:gap-4">
-        <div class="text-sm text-slate-500 dark:text-slate-400">{role.period}</div>
+        <div class="text-sm text-slate-500 dark:text-stone-400">{role.period}</div>
         <div>
-          <h3 class="text-base font-semibold text-slate-900 dark:text-slate-100">
-            {role.title} <span class="font-normal text-slate-500 dark:text-slate-400">· {role.company}</span>
+          <h3 class="text-base font-semibold text-slate-900 dark:text-stone-100">
+            {role.title} <span class="font-normal text-slate-500 dark:text-stone-400">· {role.company}</span>
           </h3>
-          <p class="mt-1 text-sm text-slate-600 dark:text-slate-400">{role.notes}</p>
+          <p class="mt-1 text-sm text-slate-600 dark:text-stone-400">{role.notes}</p>
         </div>
       </li>
     ))}
   </ol>
-  <p class="mt-8 text-sm text-slate-500 dark:text-slate-400">
+  <p class="mt-8 text-sm text-slate-500 dark:text-stone-400">
     Full details on the
     <a href="/Neil-Tellez-Resume.pdf" download class="font-medium text-[var(--accent)] hover:text-[var(--accent-strong)]">résumé</a>.
   </p>

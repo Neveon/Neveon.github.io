@@ -16,9 +16,9 @@ const projects = [
 <Section id="projects" title="Recent Projects">
   <div class="flex flex-col gap-5">
     {projects.map((p) => (
-      <article class="flex flex-col rounded-lg border border-slate-200 bg-slate-50/50 p-6 transition hover:border-[var(--accent)] dark:border-slate-800 dark:bg-slate-900/50">
+      <article class="flex flex-col rounded-lg border border-slate-200 bg-slate-50/50 p-6 transition hover:border-[var(--accent)] dark:border-stone-800 dark:bg-stone-900/50">
         {p.featured && p.screenshot && (
-          <div class="mb-5 overflow-hidden rounded-md border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-950">
+          <div class="mb-5 overflow-hidden rounded-md border border-slate-200 bg-white dark:border-stone-800 dark:bg-stone-950">
             <img
               src={p.screenshot}
               alt={`${p.name} screenshot`}
@@ -28,12 +28,12 @@ const projects = [
           </div>
         )}
         <div class="flex items-baseline justify-between gap-3">
-          <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">{p.name}</h3>
+          <h3 class="text-lg font-semibold text-slate-900 dark:text-stone-100">{p.name}</h3>
           {p.note && (
-            <span class="text-xs text-slate-500 dark:text-slate-500">{p.note}</span>
+            <span class="text-xs text-slate-500 dark:text-stone-500">{p.note}</span>
           )}
         </div>
-        <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+        <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600 dark:text-stone-400">
           {p.blurb}
         </p>
         {(p.live || p.repo) && (
