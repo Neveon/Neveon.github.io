@@ -2,23 +2,29 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* ─── Accent color ────────────────────────────────────────────────
-   Change these four values to swap the site's accent color.
-   Current: indigo. Try emerald, teal, amber, rose, sky, violet.
-   (Reference Tailwind palette: https://tailwindcss.com/docs/colors)
+/* ─── Color palette ───────────────────────────────────────────────
+   Light mode: slate + indigo accent.
+   Dark mode: deep stone (black/warm-grey) + muted navy accent
+              + camel-brown highlight on section labels.
+
+   Tune these six values to swap the palette.
 ─────────────────────────────────────────────────────────────────── */
 :root {
-  --accent: #4f46e5;         /* indigo-600 */
-  --accent-strong: #4338ca;  /* indigo-700 */
+  --accent: #4f46e5;          /* indigo-600 — links, buttons */
+  --accent-strong: #4338ca;   /* indigo-700 — hover */
+  --highlight: #4f46e5;       /* section labels (matches accent in light) */
 }
+
 .dark {
-  --accent: #818cf8;         /* indigo-400 */
-  --accent-strong: #a5b4fc;  /* indigo-300 */
+  --accent: #7fa3c7;          /* muted navy — links, buttons */
+  --accent-strong: #a1bdd7;   /* lighter navy — hover */
+  --highlight: #c9a77f;       /* camel brown — section labels */
 }
 
 @theme {
   --color-accent: var(--accent);
   --color-accent-strong: var(--accent-strong);
+  --color-highlight: var(--highlight);
 }
 
 html {
