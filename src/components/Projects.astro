@@ -1,0 +1,70 @@
+---
+import Section from './Section.astro';
+
+const projects = [
+  {
+    name: 'JobPing',
+    featured: true,
+    blurb: 'Daily AI-matched job digest. Full-stack Next.js + FastAPI + Claude API. Built in 48 hours for my own job search.',
+    live: 'https://example.com',          // TODO: replace with live URL
+    repo: 'https://github.com/Neveon',    // TODO: replace with JobPing repo URL
+    screenshot: '/jobping-placeholder.svg',
+  },
+  {
+    name: 'Pet Tinder',
+    blurb: 'Senior project, 2022. React + PetFinder API swipe interface.',
+    repo: 'https://github.com/Neveon',    // TODO: replace with Pet Tinder repo URL
+    note: 'archived, not maintained',
+  },
+  {
+    name: 'Amazon Platform Work',
+    blurb: 'Petabyte-scale security data ingestion. Three years of production systems.',
+    note: 'internal — details on résumé',
+  },
+];
+---
+
+<Section id="projects" title="Projects">
+  <div class="grid gap-5 sm:grid-cols-2">
+    {projects.map((p) => (
+      <article class:list={[
+        'flex flex-col rounded-lg border border-slate-200 bg-slate-50/50 p-6 transition hover:border-[var(--accent)] dark:border-slate-800 dark:bg-slate-900/50',
+        p.featured && 'sm:col-span-2',
+      ]}>
+        {p.featured && p.screenshot && (
+          <div class="mb-5 overflow-hidden rounded-md border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-950">
+            <img
+              src={p.screenshot}
+              alt={`${p.name} screenshot`}
+              class="aspect-[16/8] w-full object-cover"
+              loading="lazy"
+            />
+          </div>
+        )}
+        <div class="flex items-baseline justify-between gap-3">
+          <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">{p.name}</h3>
+          {p.note && (
+            <span class="text-xs text-slate-500 dark:text-slate-500">{p.note}</span>
+          )}
+        </div>
+        <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+          {p.blurb}
+        </p>
+        {(p.live || p.repo) && (
+          <div class="mt-4 flex gap-4 text-sm">
+            {p.live && (
+              <a href={p.live} target="_blank" rel="noopener noreferrer" class="font-medium text-[var(--accent)] hover:text-[var(--accent-strong)]">
+                Live →
+              </a>
+            )}
+            {p.repo && (
+              <a href={p.repo} target="_blank" rel="noopener noreferrer" class="font-medium text-[var(--accent)] hover:text-[var(--accent-strong)]">
+                GitHub →
+              </a>
+            )}
+          </div>
+        )}
+      </article>
+    ))}
+  </div>
+</Section>

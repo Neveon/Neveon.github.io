@@ -1,0 +1,56 @@
+---
+import Section from './Section.astro';
+
+const roles = [
+  {
+    company: 'Amazon',
+    title: 'Software Development Engineer — Security Intelligence Data Platform',
+    period: 'Aug 2022 – Jul 2025',
+    notes: '$1.4M/yr infrastructure savings · 95%+ Sev-2 reduction · petabyte-scale streaming ingestion.',
+  },
+  {
+    company: 'MIT',
+    title: 'AI Research Intern',
+    period: '2021',
+    notes: 'Antibiotic resistance NLP on DNA sequence datasets.',
+  },
+  {
+    company: 'Kean University',
+    title: 'AI Research Fellow',
+    period: '2021 – 2022',
+    notes: 'Co-authored two papers (ISNCC, SAIS).',
+  },
+  {
+    company: 'Cal State',
+    title: 'ML Researcher',
+    period: '2020',
+    notes: 'CNN for insurance claim automation.',
+  },
+  {
+    company: 'Independent',
+    title: 'Full-Stack Freelance',
+    period: '2019 – 2020',
+    notes: 'Wedding photo apps · React + Firebase.',
+  },
+];
+---
+
+<Section id="experience" title="Experience">
+  <ol class="space-y-6">
+    {roles.map((role) => (
+      <li class="grid gap-1 sm:grid-cols-[10rem_1fr] sm:gap-4">
+        <div class="text-sm text-slate-500 dark:text-slate-400">{role.period}</div>
+        <div>
+          <h3 class="text-base font-semibold text-slate-900 dark:text-slate-100">
+            {role.title} <span class="font-normal text-slate-500 dark:text-slate-400">· {role.company}</span>
+          </h3>
+          <p class="mt-1 text-sm text-slate-600 dark:text-slate-400">{role.notes}</p>
+        </div>
+      </li>
+    ))}
+  </ol>
+  <p class="mt-8 text-sm text-slate-500 dark:text-slate-400">
+    Full details on the
+    <a href="/resume.pdf" download class="font-medium text-[var(--accent)] hover:text-[var(--accent-strong)]">résumé</a>.
+  </p>
+</Section>

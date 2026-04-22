@@ -1,0 +1,16 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="mx-auto mt-8 max-w-3xl border-t border-slate-200 px-6 py-10 dark:border-slate-800">
+  <div class="flex flex-col gap-3 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between dark:text-slate-400">
+    <div class="flex flex-wrap gap-x-5 gap-y-1">
+      <a href="mailto:neil.tellez.dev@gmail.com" class="hover:text-[var(--accent)]">neil.tellez.dev@gmail.com</a>
+      <a href="https://github.com/Neveon" target="_blank" rel="noopener noreferrer" class="hover:text-[var(--accent)]">GitHub</a>
+      <a href="https://www.linkedin.com/in/neiltellez/" target="_blank" rel="noopener noreferrer" class="hover:text-[var(--accent)]">LinkedIn</a>
+    </div>
+    <div class="text-xs text-slate-400 dark:text-slate-500">
+      © {year} Neil Tellez · Built with <a href="https://astro.build" target="_blank" rel="noopener noreferrer" class="hover:text-[var(--accent)]">Astro</a>
+    </div>
+  </div>
+</footer>

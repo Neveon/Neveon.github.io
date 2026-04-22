@@ -1,0 +1,32 @@
+---
+const links = [
+  { href: 'https://github.com/Neveon', label: 'GitHub' },
+  { href: 'https://www.linkedin.com/in/neiltellez/', label: 'LinkedIn' },
+  { href: 'mailto:neil.tellez.dev@gmail.com', label: 'Email' },
+  { href: '/resume.pdf', label: 'Résumé', download: true },
+];
+---
+
+<section id="top" class="mx-auto max-w-3xl px-6 pt-20 pb-16 sm:pt-28">
+  <h1 class="text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl dark:text-slate-50">
+    Neil Tellez
+  </h1>
+  <p class="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600 dark:text-slate-400">
+    Backend &amp; platform engineer. Three years at Amazon building data pipelines at petabyte scale.
+  </p>
+  <ul class="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm">
+    {links.map(({ href, label, download }) => (
+      <li>
+        <a
+          href={href}
+          {...(download ? { download: true } : {})}
+          {...(href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+          class="inline-flex items-center gap-1 font-medium text-[var(--accent)] transition hover:text-[var(--accent-strong)]"
+        >
+          {label}
+          <span aria-hidden="true" class="text-slate-400">→</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</section>
