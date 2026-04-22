@@ -6,15 +6,9 @@ const projects = [
     name: 'JobPing',
     featured: true,
     blurb: 'Daily AI-matched job digest. Full-stack Next.js + FastAPI + Claude API. Built in 48 hours for my own job search.',
-    live: 'https://example.com',          // TODO: replace with live URL
-    repo: 'https://github.com/Neveon',    // TODO: replace with JobPing repo URL
-    screenshot: '/jobping-placeholder.svg',
-  },
-  {
-    name: 'Pet Tinder',
-    blurb: 'Senior project, 2022. React + PetFinder API swipe interface.',
-    repo: 'https://github.com/Neveon',    // TODO: replace with Pet Tinder repo URL
-    note: 'archived, not maintained',
+    live: 'https://jobping.dev/',
+    repo: 'https://github.com/Neveon/jobping-api',
+    screenshot: '/jobping.png',
   },
   {
     name: 'Amazon Platform Work',
@@ -24,19 +18,16 @@ const projects = [
 ];
 ---
 
-<Section id="projects" title="Projects">
-  <div class="grid gap-5 sm:grid-cols-2">
+<Section id="projects" title="Recent Projects">
+  <div class="flex flex-col gap-5">
     {projects.map((p) => (
-      <article class:list={[
-        'flex flex-col rounded-lg border border-slate-200 bg-slate-50/50 p-6 transition hover:border-[var(--accent)] dark:border-slate-800 dark:bg-slate-900/50',
-        p.featured && 'sm:col-span-2',
-      ]}>
+      <article class="flex flex-col rounded-lg border border-slate-200 bg-slate-50/50 p-6 transition hover:border-[var(--accent)] dark:border-slate-800 dark:bg-slate-900/50">
         {p.featured && p.screenshot && (
           <div class="mb-5 overflow-hidden rounded-md border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-950">
             <img
               src={p.screenshot}
               alt={`${p.name} screenshot`}
-              class="aspect-[16/8] w-full object-cover"
+              class="aspect-[16/8] w-full object-cover object-top"
               loading="lazy"
             />
           </div>
