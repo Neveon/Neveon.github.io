@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ─── Accent color ────────────────────────────────────────────────
+   Change these four values to swap the site's accent color.
+   Current: indigo. Try emerald, teal, amber, rose, sky, violet.
+   (Reference Tailwind palette: https://tailwindcss.com/docs/colors)
+─────────────────────────────────────────────────────────────────── */
+:root {
+  --accent: #4f46e5;         /* indigo-600 */
+  --accent-strong: #4338ca;  /* indigo-700 */
+}
+.dark {
+  --accent: #818cf8;         /* indigo-400 */
+  --accent-strong: #a5b4fc;  /* indigo-300 */
+}
+
+@theme {
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-feature-settings: "ss01", "cv11";
+}
