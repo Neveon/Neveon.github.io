@@ -10,9 +10,9 @@
    Tune these six values to swap the palette.
 ─────────────────────────────────────────────────────────────────── */
 :root {
-  --accent: #4f46e5;          /* indigo-600 — links, buttons */
-  --accent-strong: #4338ca;   /* indigo-700 — hover */
-  --highlight: #4f46e5;       /* section labels (matches accent in light) */
+  --accent: #0d9488;          /* teal-600 — links, buttons */
+  --accent-strong: #0f766e;   /* teal-700 — hover */
+  --highlight: #0d9488;       /* section labels (matches accent in light) */
 }
 
 .dark {
