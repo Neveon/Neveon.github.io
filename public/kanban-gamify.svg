@@ -1,0 +1,71 @@
+<svg width="1200" height="600" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="kanban-gamify confetti placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#1e293b"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#0f172a" stop-opacity="0.9"/>
+      <stop offset="0.6" stop-color="#0f172a" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#0f172a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bg)"/>
+
+  <!-- confetti -->
+  <g>
+    <g transform="translate(90,60) rotate(20)"><rect x="-8" y="-13" width="16" height="26" rx="2" fill="#f43f5e"/></g>
+    <g transform="translate(180,110) rotate(-35)"><rect x="-7" y="-11" width="14" height="22" rx="2" fill="#facc15"/></g>
+    <circle cx="260" cy="40" r="8" fill="#22d3ee"/>
+    <g transform="translate(340,130) rotate(15)"><rect x="-8" y="-13" width="16" height="26" rx="2" fill="#a78bfa"/></g>
+    <g transform="translate(430,70) rotate(-20)"><rect x="-7" y="-12" width="14" height="24" rx="2" fill="#fb923c"/></g>
+    <circle cx="520" cy="120" r="7" fill="#4ade80"/>
+    <g transform="translate(610,45) rotate(30)"><rect x="-8" y="-13" width="16" height="26" rx="2" fill="#f472b6"/></g>
+    <g transform="translate(700,110) rotate(-50)"><rect x="-7" y="-11" width="14" height="22" rx="2" fill="#60a5fa"/></g>
+    <circle cx="790" cy="60" r="8" fill="#f43f5e"/>
+    <g transform="translate(880,120) rotate(-15)"><rect x="-8" y="-13" width="16" height="26" rx="2" fill="#facc15"/></g>
+    <g transform="translate(970,50) rotate(40)"><rect x="-7" y="-12" width="14" height="24" rx="2" fill="#a78bfa"/></g>
+    <g transform="translate(1060,110) rotate(-30)"><rect x="-8" y="-13" width="16" height="26" rx="2" fill="#22d3ee"/></g>
+    <circle cx="1130" cy="60" r="7" fill="#fb923c"/>
+
+    <g transform="translate(60,200) rotate(30)"><rect x="-8" y="-13" width="16" height="26" rx="2" fill="#4ade80"/></g>
+    <circle cx="150" cy="250" r="8" fill="#f472b6"/>
+    <g transform="translate(250,210) rotate(15)"><rect x="-7" y="-12" width="14" height="24" rx="2" fill="#60a5fa"/></g>
+    <g transform="translate(1140,210) rotate(-25)"><rect x="-8" y="-13" width="16" height="26" rx="2" fill="#f43f5e"/></g>
+    <circle cx="1050" cy="250" r="7" fill="#facc15"/>
+    <g transform="translate(960,200) rotate(-15)"><rect x="-7" y="-11" width="14" height="22" rx="2" fill="#4ade80"/></g>
+
+    <g transform="translate(40,300) rotate(20)"><rect x="-7" y="-12" width="14" height="24" rx="2" fill="#22d3ee"/></g>
+    <circle cx="1160" cy="300" r="8" fill="#f472b6"/>
+    <circle cx="120" cy="350" r="7" fill="#fb923c"/>
+    <g transform="translate(1090,335) rotate(40)"><rect x="-8" y="-13" width="16" height="26" rx="2" fill="#60a5fa"/></g>
+
+    <g transform="translate(70,400) rotate(25)"><rect x="-8" y="-13" width="16" height="26" rx="2" fill="#a78bfa"/></g>
+    <circle cx="180" cy="440" r="8" fill="#f43f5e"/>
+    <g transform="translate(300,410) rotate(50)"><rect x="-7" y="-12" width="14" height="24" rx="2" fill="#facc15"/></g>
+    <g transform="translate(420,450) rotate(-20)"><rect x="-8" y="-13" width="16" height="26" rx="2" fill="#22d3ee"/></g>
+    <circle cx="560" cy="420" r="7" fill="#60a5fa"/>
+    <g transform="translate(680,455) rotate(-40)"><rect x="-7" y="-11" width="14" height="22" rx="2" fill="#f472b6"/></g>
+    <g transform="translate(800,415) rotate(20)"><rect x="-8" y="-13" width="16" height="26" rx="2" fill="#4ade80"/></g>
+    <circle cx="910" cy="450" r="8" fill="#fb923c"/>
+    <g transform="translate(1010,410) rotate(35)"><rect x="-7" y="-12" width="14" height="24" rx="2" fill="#f43f5e"/></g>
+    <g transform="translate(1120,445) rotate(-25)"><rect x="-8" y="-13" width="16" height="26" rx="2" fill="#a78bfa"/></g>
+
+    <circle cx="110" cy="520" r="7" fill="#facc15"/>
+    <g transform="translate(230,500) rotate(-30)"><rect x="-8" y="-13" width="16" height="26" rx="2" fill="#60a5fa"/></g>
+    <g transform="translate(360,540) rotate(40)"><rect x="-7" y="-12" width="14" height="24" rx="2" fill="#f472b6"/></g>
+    <circle cx="500" cy="510" r="8" fill="#4ade80"/>
+    <g transform="translate(640,545) rotate(25)"><rect x="-8" y="-13" width="16" height="26" rx="2" fill="#fb923c"/></g>
+    <g transform="translate(760,505) rotate(-45)"><rect x="-7" y="-11" width="14" height="22" rx="2" fill="#a78bfa"/></g>
+    <circle cx="880" cy="540" r="7" fill="#f43f5e"/>
+    <g transform="translate(1000,510) rotate(-15)"><rect x="-8" y="-13" width="16" height="26" rx="2" fill="#22d3ee"/></g>
+    <g transform="translate(1110,545) rotate(45)"><rect x="-7" y="-12" width="14" height="24" rx="2" fill="#facc15"/></g>
+  </g>
+
+  <!-- legibility backing + title -->
+  <ellipse cx="600" cy="300" rx="400" ry="130" fill="url(#glow)"/>
+  <text x="600" y="300" text-anchor="middle" dominant-baseline="central"
+        font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+        font-size="78" font-weight="700" fill="#f8fafc" letter-spacing="-1">kanban-gamify</text>
+</svg>
